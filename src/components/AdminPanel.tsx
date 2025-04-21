@@ -37,7 +37,6 @@ const AdminPanel = () => {
             );
             const imageUrl = res.data.secure_url;
 
-            // Отправляем все данные (название, описание, цена и изображение)
             const productData = {
                 name,
                 description,
@@ -48,11 +47,11 @@ const AdminPanel = () => {
             const response = await axios.post("/api/save-image", productData);
             console.log(response.data.message);
 
-            setImageUrls((prev) => [...prev, productData]); // Добавляем все данные в состояние
+            setImageUrls((prev) => [...prev, productData]);
             setFile(null);
-            setName(""); // Очистить поле после отправки
-            setDescription(""); // Очистить поле после отправки
-            setPrice(""); // Очистить поле после отправки
+            setName("");
+            setDescription("");
+            setPrice("");
         } catch (error) {
             console.error("Ошибка при загрузке изображения:", error);
         }
