@@ -1,0 +1,74 @@
+.main-header {
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.nav-main-btn {
+  border: none;
+  background-color: transparent;
+  color: black;
+  display: flex;
+  margin-left: 400px;
+  font-family: 'Rubik Doodle Shadow', system-ui;
+  font-size: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 8px;
+  text-transform: uppercase;
+  outline: 2px solid black;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+
+.titile {
+  color: white;
+  position: absolute;
+  top: 300px;
+}
+
+:root {
+  --loader-bg: #301934;
+  --spinner-border: #ffffff;
+  --spinner-transparent: transparent;
+}
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--spinner-border);;
+  border-top-color: var(--spinner-transparent);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.basket-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
