@@ -19,7 +19,7 @@ const ImageGallery = () => {
   const [images, setImages] = useState<Product[]>([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3005/api/get-images")
+    axios.get("https://nurshop-alpha.vercel.app/api/get-images")
       .then((response) => {
         setImages(response.data);
       })
