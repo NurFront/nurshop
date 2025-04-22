@@ -107,3 +107,11 @@
 .remove-btn:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .cart {
+    position: absolute;
+    right: 50px;
+    z-index: 9999;
+  }
+}

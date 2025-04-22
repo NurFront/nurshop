@@ -72,3 +72,9 @@
   font-size: 30px;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .nav-main-btn {
+    margin-left: 0;
+  }
+}
