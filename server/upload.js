@@ -77,6 +77,8 @@ app.delete("/api/delete-image/:id", (req, res) => {
   });
 });
 
-app.listen(3005, () => {
-  console.log(`Server started on port 3005`);
+const PORT = 3005;
+
+app.listen(PORT, () => {
+  console.log(`Server started on port ${PORT}`);
 });
